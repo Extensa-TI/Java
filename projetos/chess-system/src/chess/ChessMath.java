@@ -3,6 +3,7 @@ package chess;
 import boardgame.Board;
 import boardgame.Piece;
 import boardgame.Position;
+import chess.pieces.King;
 import chess.pieces.Rook;
 
 public class ChessMath {
@@ -71,5 +72,8 @@ public class ChessMath {
 
         placeNewPiece('a', 8, new Rook(board, Color.BLACK));
         placeNewPiece('h', 8, new Rook(board, Color.BLACK));
+
+        placeNewPiece('e', 1, new King(board, Color.WHITE));
+        placeNewPiece('e', 8, new King(board, Color.BLACK));
 	}
 }
