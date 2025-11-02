@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -8,8 +9,8 @@
 
 <AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
    <children>
-      <Button fx:id="btTest" layoutX="308.0" layoutY="224.0" mnemonicParsing="false" onAction="#onBtTestAction" text="Button" />
-      <Label layoutX="307.0" layoutY="198.0" text="Click Here" />
+      <Button fx:id="btTest" layoutX="28.0" layoutY="249.0" mnemonicParsing="false" onAction="#onBtTestAction" text="Button" />
+      <Label layoutX="27.0" layoutY="216.0" text="Click Here" />
       <Label layoutX="30.0" layoutY="36.0" text="Calculate Sum">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -20,5 +21,7 @@
       <Button fx:id="btSum" layoutX="30.0" layoutY="150.0" mnemonicParsing="false" onAction="#onBtSumAction" text="Sum" />
       <Label layoutX="30.0" layoutY="189.0" text="Result = " />
       <Label fx:id="labelResult" layoutX="91.0" layoutY="189.0" prefHeight="17.0" prefWidth="48.0" />
+      <ComboBox fx:id="comboBoxPerson" layoutX="223.0" layoutY="32.0" onAction="#onComboBoxPersonAction" prefWidth="150.0" promptText="Select a person..." />
+      <Button fx:id="btAll" layoutX="265.0" layoutY="72.0" mnemonicParsing="false" onAction="#onBtAllAction" text="All" />
    </children>
 </AnchorPane>
